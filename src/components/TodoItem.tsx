@@ -13,8 +13,8 @@ const TodoItem: FC<TodoItemProps> = ({todo}) => {
   return (
     <div>
         
-      <div style={{padding: 15, border: '1px solid gray'}}><input type='checkbox' checked={todo.completed}/>
-      #{todo.id} Titile: {todo.title} Состояние:{todo.completed ? 'true' : 'false'}</div>
+      <input type='checkbox' checked={todo.completed}/>
+      #{todo.id} Titile: {todo.title} Состояние:{todo.completed ? 'true' : 'false'}
       
     </div>
   );
